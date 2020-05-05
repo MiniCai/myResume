@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1071177_wunjwrdfxq.css">
+  <link rel="stylesheet" href="./index.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@4.7.0/dist/echarts.min.js"></script>
+  <title>蔡美英个人简历</title>
+</head>
+
+<body>
+  <header>
+    <div id="canvas-wrapper" class="img">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="header">
+      <p class="self">蔡美英
+        <span class="resume">简<span class="hidden">--</span>历。</span>
+      </p>
+      <div>
+        <p class="link-wrapper">
+          <a class="link" href="https://www.baidu.com" target="_blank">https://www.baidu.com</a>
+        </p>
+        <p class="position link">前端开发工程师 / Front-end development engineer</p>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="contents-wrapper">
+      <p class="self top-tip">目录
+        <span class="resume">CONTENTS</span>
+      </p>
+      <div class="contents-list-wrapper">
+        <a href="#professional-skills" class="contents-list">
+          <div><span class="serial-num">2</span><span class="label">职业技能</span></div>
+        </a>
+        <a href="#basic-information" class="contents-list">
+          <div><span class="serial-num">1</span><span class="label">基本信息</span></div>
+        </a>
+        <a href="#project-experience" class="contents-list">
+          <div><span class="serial-num">4</span><span class="label">项目经验</span></div>
+        </a>
+        <a href="#work-experience" class="contents-list">
+          <div><span class="serial-num">3</span><span class="label">工作经历</span></div>
+        </a>
+      </div>
+    </div>
+    <div id="basic-information">
+      <div class="title-wrapper base">
+        <p class="base-part title">基本信息<span class="title English-translation">Basic Information</span></p>
+      </div>
+      <div class="clip-wrapper">
+        <img class="clip-img" src="./img/me.png" alt="">
+        <div class="base-info-detail">
+          <i class="iconfont icon-graduation" style="color:#999;font-size:1.5rem;font-weight: 700;"></i>
+          <span>广州中医药大学（2018年毕业）<span style="font-size:1.5rem;">本科</span></span>
+        </div>
+        <div class="base-info-detail">
+          <i class="iconfont icon-specialty" style="color:#999;font-size:1.5rem;font-weight: 700;"></i>
+          <pre>勤奋 <span style="font-size:3rem;">负责</span>、
+<span style="font-size:4.5rem;">自学能力</span>较强、
+        适应力<span style="font-size:2.2rem;">较强</span>
+          </pre>
+        </div>
+        <div class="base-info-detail">
+          <i class="iconfont icon-address" style="color:#999;position: relative;top: 1px;font-size:1.6rem;"></i>
+          <span>Work in <span style="font-size:1.5rem;">Guangzhou</span></span>
+        </div>
+        <div class="base-info-detail">
+          <div>
+            <i class="iconfont icon-phone" style="color:#999;font-size:1.3rem;font-weight: 700;"></i>
+            <span style="font-size: 2rem;">13559786230</span>
+          </div>
+          <div>
+            <i class="iconfont icon-mail" style="color:#999;font-size:1.3rem;font-weight: 700;"></i>
+            <span style="font-size:1.5rem;">741245756@qq.com</span>
+          </div>
+        </div>
+        <div class="base-info-detail">
+          <i class="iconfont icon-hobby"
+            style="color:#999;position: relative;top: 1px;font-size:1.5rem;font-weight: 700;"></i>
+          <pre><span style="font-size:1.6rem;">音乐</span>、<span style="font-size:1.4rem;">影视</span>、
+美食、<span style="font-size:1.8rem;">游戏</span></pre>
+        </div>
+      </div>
+    </div>
+    <div id="professional-skills">
+      <div class="title-wrapper skill">
+        <p class="base-part title">职业技能<span class="title English-translation">Professional Skills</span></p>
+      </div>
+      <div class="chart">
+        <div id="main" style="width: 100%;height:30rem;"></div>
+      </div>
+    </div>
+    <div id="work-experience">
+      <div class="title-wrapper jobs">
+        <p class="base-part title">工作经历<span class="title English-translation">Work Experience</span></p>
+      </div>
+      <div class="jobs-wrapepr">
+        <div class="jobs-info-wrapper">
+          <p class="jobs-info">广州头文科技有限公司</p>
+          <p>前端开发工程师</p>
+          <p>2019 - 02 ~ 至今</p>
+          <ul class="detail">
+            <li>1 · 主持产品UI和交互方面的开发需求</li>
+            <li>2 · 负责参与工作台（内部后台管理系统）及客户系统，写作系统（暂时不对外）等系统的迭代及页面功能开发，接口对接，测试。头文助手（小程序）的迭代</li>
+            <li>3 · 优化代码并且保持浏览器良好的兼容性，优化性能</li>
+            <li>4 · 负责前端效果调优，体验优化</li>
+            <li>5 . 参与通用组件的开发</li>
+            <li>6 . 熟练使用git工具进行代码管理</li>
+          </ul>
+        </div>
+        <div class="jobs-info-wrapper">
+          <p class="jobs-info">广州互诺科技有限公司</p>
+          <p>前端开发工程师（实习）</p>
+          <p>2018 - 04 ~ 2018 - 07</p>
+          <ul class="detail">
+            <li>1 · 主持产品UI和交互方面的开发需求</li>
+            <li>2 · 负责网页产品的前端显示效果开发，配合后台开发人员实现网站动态功能</li>
+            <li>3 · 负责前端效果调优，体验优化</li>
+            <li>4 · 期间获得奖项：新人业绩最高奖</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="project-experience">
+      <div class="title-wrapper experience">
+        <p class="base-part title">项目经验<span class="title English-translation">Project Experience</span></p>
+      </div>
+      <div class="experience-wrapper">
+        <div id="work">
+          <div class="experience-label">
+            <bag-include file="experienceLabel.html">
+              <bag-slot name="class">work on</bag-slot>
+              <bag-slot name="name">工作台</bag-slot>
+            </bag-include>
+            <bag-include file="experienceLabel.html">
+              <bag-slot name="class">writing</bag-slot>
+              <bag-slot name="name">写作系统</bag-slot>
+            </bag-include>
+            <bag-include file="experienceLabel.html">
+              <bag-slot name="class">client</bag-slot>
+              <bag-slot name="name">客户系统 <br /> & <br /> 小程序</bag-slot>
+            </bag-include>
+          </div>
+          <div>
+            <p class="experience-info"><i class="iconfont icon-title"></i> 工作台 <span
+                class="description">（内容系统化、自动化管理，客户与写手沟通的中转站。）</span></p>
+            <p class="experience-detail-wrapper">主要贡献或功能：</p>
+            <ul class="experience-detail">
+              <li>权限管理：根据角色（岗位）控制目录，菜单，button等</li>
+              <li>站内通信：任务通知，bug修复通知，更新通知等让员工之间实时沟通</li>
+              <li>数据管理：让项目、文章、绩效数据化</li>
+              <li>内容支持：为小米有品提供图文、视频支持</li>
+              <li>分发管理：提供手动分发、自动分发两种选择，容错性高，提高发布速率，减少人力资源</li>
+            </ul>
+            <p class="technique">主要技术：vue + vue-cli3.0 + axios + vuex + vue-router + element-ui + echart + js-sdk（分片上传）
+              +
+              websocket</p>
+            <img class="ex-img" src="./img/w1.png" alt="" srcset="">
+            <img class="ex-img" src="./img/w2.png" alt="" srcset="">
+            <img class="ex-img" src="./img/w3.png" alt="" srcset="">
+            <img class="ex-img" src="./img/w4.png" alt="" srcset="">
+          </div>
+        </div>
+
+        <div id="writing">
+          <div class="experience-label">
+            <bag-include file="experienceLabel.html">
+              <bag-slot name="class">work</bag-slot>
+              <bag-slot name="name">工作台</bag-slot>
+            </bag-include>
+            <bag-include file="experienceLabel.html">
+              <bag-slot name="class">writing on</bag-slot>
+              <bag-slot name="name">写作系统</bag-slot>
+            </bag-include>
+            <bag-include file="experienceLabel.html">
+              <bag-slot name="class">client</bag-slot>
+              <bag-slot name="name">客户系统 <br /> & <br /> 小程序</bag-slot>
+            </bag-include>
+          </div>
+          <div>
+            <p class="experience-info"><i class="iconfont icon-title"></i> 写作系统 <span
+                class="description">（写手写作平台）</span></p>
+            <p class="experience-detail-wrapper">主要贡献或功能：</p>
+            <ul class="experience-detail">
+              <li>框架搭建</li>
+              <li>通过路由实现三栏布局</li>
+              <li>开发通用组件</li>
+              <li>石墨编辑器</li>
+            </ul>
+            <p class="technique">主要技术：vue + vue-cli4.0 + axios + vuex + vue-router + element-ui + 石墨编辑器</p>
+            <img class="ex-img" src="./img/xz1.png" alt="" srcset="">
+            <img class="ex-img" src="./img/xz2.png" alt="" srcset="">
+            <img class="ex-img" src="./img/xz3.png" alt="" srcset="">
+          </div>
+        </div>
+
+        <div id="client">
+          <div class="experience-label">
+            <bag-include file="experienceLabel.html">
+              <bag-slot name="class">work</bag-slot>
+              <bag-slot name="name">工作台</bag-slot>
+            </bag-include>
+            <bag-include file="experienceLabel.html">
+              <bag-slot name="class">writing</bag-slot>
+              <bag-slot name="name">写作系统</bag-slot>
+            </bag-include>
+            <bag-include file="experienceLabel.html">
+              <bag-slot name="class">client on</bag-slot>
+              <bag-slot name="name">客户系统 <br /> & <br /> 小程序</bag-slot>
+            </bag-include>
+          </div>
+          <div>
+            <div>
+              <p class="experience-info"><i class="iconfont icon-title"></i> 客户系统 & 小程序（头文助手） <span
+                  class="description">（基于大数据和人工智能的综合内容营销平台）</span>
+              </p>
+              <p class="experience-detail-wrapper">主要贡献或功能：</p>
+              <ul class="experience-detail">
+                <li>框架搭建</li>
+                <li>微信二维码登陆</li>
+                <li>融合官网介绍公司</li>
+                <li>服务商城介绍产品包及成功案例</li>
+                <li>个人中心：多人审核，系统消息模块，订单 + 详情（图表，日历），个人设置，仿微信pc端聊天窗口等</li>
+                <li>参与客户系统小程序版的迭代（微信搜索：头文助手）</li>
+              </ul>
+              <p class="technique">主要技术：vue + vue-cli4.0 + axios + vuex + vue-router + element-ui + WebSocket + swipper
+                + css3 + echart + 石墨编辑器</p>
+              <p class="technique">具 体 见：https://partner.topwin.tech/</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p class="thank"><span>Thanks</span></p>
+    <div>
+      <p class="link"><i class="iconfont icon-phone" style="color:#999;font-size:1.3rem;font-weight: 700;"></i>
+        13559786230</p>
+      <a class="link" href="https://www.baidu.com" target="_blank">https://www.baidu.com</a>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+
+</html>
