@@ -1,3 +1,4 @@
+// 锚点定位
 const classList = ['work', 'writing', 'client']
 classList.forEach(item => {
   var domList = document.querySelectorAll(`.${item}`)
@@ -8,6 +9,7 @@ classList.forEach(item => {
   })
 });
 
+// canvas
 const canvasWrapper = document.getElementById('canvas-wrapper');
 const wrapperWidth = canvasWrapper.offsetWidth;
 const wrapperHeigth = canvasWrapper.offsetHeight;
@@ -24,6 +26,7 @@ img.onload = function () {
   ctx.drawImage(this, wrapperWidth - 500, wrapperHeigth - 307, 125, 275)
 }
 
+// chart
 const myChart = echarts.init(document.getElementById('main'));
 var pathSymbols = {
   HTML5: 'image://./img/icon/HTML5.svg',
@@ -45,7 +48,7 @@ var option = {
       type: 'none'
     },
     formatter: function (params) {
-      return params[0].name + ': ' + params[0].value + '%';
+      return params[0].name + ': ' + params[0].value + '分';
     }
   },
   xAxis: {
@@ -70,26 +73,10 @@ var option = {
       show: false
     },
     axisLine: {
-      show: true,
-      lineStyle: {
-        color: '#999'
-      }
+      show: false
     },
     axisLabel: {
-      show: true,
-      formatter: function (num) {
-        if (num >= 90) {
-          return '精通(90~100)';
-        } else if (num < 90 && num >= 70) {
-          return '熟练(70~90)';
-        } else if (num < 70 && num >= 58) {
-          return '一般(58~70)';
-        } else if (num < 58 && num >= 40) {
-          return '了解(< 58)';
-        } else if (num < 40) {
-          return '';
-        }
-      }
+      show: false
     }
   },
   color: ['#C5A5E8'],
@@ -106,12 +93,22 @@ var option = {
         opacity: 1
       }
     },
-    data: [80, 78, 70, 76, 73, 63, 70, 68, 70, 55],
+    data: [80, 78, 70, 76, 73, 63, 70, 50, 70, 30],
     z: 10
   }, {
     name: 'glyph',
     type: 'pictorialBar',
     barGap: '-100%',
+    label: {
+      normal: {
+        show: true,
+        position: 'top',
+        offset: [0, 0],
+        textStyle: {
+          fontSize: 16
+        }
+      }
+    },
     symbolPosition: 'end',
     symbolSize: 50,
     symbolOffset: [0, '-120%'],
@@ -144,7 +141,7 @@ var option = {
         symbol: pathSymbols.git,
         symbolSize: [30, 30]
       }, {
-        value: 68,
+        value: 50,
         symbol: pathSymbols.ES6,
         symbolSize: [30, 30]
       },
@@ -154,7 +151,7 @@ var option = {
         symbolSize: [30, 30]
       },
       {
-        value: 55,
+        value: 30,
         symbol: pathSymbols.nodejs,
         symbolSize: [30, 30]
       },
