@@ -93,7 +93,7 @@ var option = {
         opacity: 1
       }
     },
-    data: [80, 78, 70, 76, 73, 63, 70, 58, 70, 30],
+    data: [80, 78, 70, 78, 73, 55, 60, 50, 58, 30],
     z: 10
   }, {
     name: 'glyph',
@@ -116,7 +116,7 @@ var option = {
     symbolSize: 50,
     symbolOffset: [0, '-120%'],
     data: [{
-        value: 80,
+        value: 79,
         symbol: pathSymbols.HTML5,
         symbolSize: [30, 30]
       }, {
@@ -128,7 +128,7 @@ var option = {
         symbol: pathSymbols.JavaScript,
         symbolSize: [30, 30]
       }, {
-        value: 76,
+        value: 78,
         symbol: pathSymbols.Vue,
         symbolSize: [30, 30]
       }, {
@@ -136,20 +136,20 @@ var option = {
         symbol: pathSymbols.sass,
         symbolSize: [30, 30]
       }, {
-        value: 63,
+        value: 55,
         symbol: pathSymbols.weApp,
         symbolSize: [30, 30]
       }, {
-        value: 70,
+        value: 60,
         symbol: pathSymbols.git,
         symbolSize: [30, 30]
       }, {
-        value: 58,
+        value: 50,
         symbol: pathSymbols.ES6,
         symbolSize: [30, 30]
       },
       {
-        value: 70,
+        value: 58,
         symbol: pathSymbols.webSocket,
         symbolSize: [30, 30]
       },
@@ -164,11 +164,13 @@ var option = {
 myChart.setOption(option, window.onresize = myChart.resize);
 
 function numFormat(num) {
-  if (num >= 90) {
+  if (num >= 80) {
     return '精通';
-  } else if (num < 90 && num >= 70) {
+  } else if (num < 80 && num >= 60) {
     return '熟练';
-  } else if (num < 70 && num >= 58) {
+  } else if (num < 60 && num >= 40) {
+    return '掌握';
+  } else if (num < 40 && num >= 20) {
     return '一般';
   } else {
     return '了解'
