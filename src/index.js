@@ -48,7 +48,7 @@ var option = {
       type: 'none'
     },
     formatter: function (params) {
-      return params[0].name + ': ' + params[0].value + '分';
+      return `${params[0].name}${numFormat(params[0].value)}`;
     }
   },
   xAxis: {
@@ -93,7 +93,7 @@ var option = {
         opacity: 1
       }
     },
-    data: [80, 78, 70, 76, 73, 63, 70, 50, 70, 30],
+    data: [80, 78, 70, 76, 73, 63, 70, 58, 70, 30],
     z: 10
   }, {
     name: 'glyph',
@@ -105,7 +105,10 @@ var option = {
         position: 'top',
         offset: [0, 0],
         textStyle: {
-          fontSize: 16
+          fontSize: 13
+        },
+        formatter: function (params) {
+          return numFormat(params.value);
         }
       }
     },
@@ -141,7 +144,7 @@ var option = {
         symbol: pathSymbols.git,
         symbolSize: [30, 30]
       }, {
-        value: 50,
+        value: 58,
         symbol: pathSymbols.ES6,
         symbolSize: [30, 30]
       },
@@ -158,4 +161,16 @@ var option = {
     ]
   }]
 };
-myChart.setOption(option);
+myChart.setOption(option, window.onresize = myChart.resize);
+
+function numFormat(num) {
+  if (num >= 90) {
+    return '精通';
+  } else if (num < 90 && num >= 70) {
+    return '熟练';
+  } else if (num < 70 && num >= 58) {
+    return '一般';
+  } else {
+    return '了解'
+  }
+}
